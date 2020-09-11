@@ -70,3 +70,14 @@ We can add event handlers to selected elements using .on which expects a callbac
 | mousemove  | Mouse pointer has moved over the element                 |
 
 <!-- need sandbox -->
+
+In the event callback function the this variable is bound to the DOM element. This allows us to do things such as:
+
+```javascript
+    d3.selectAll('circle')
+        .on('click', function(d, i) {
+            d3.select(this)
+            .style('fill', 'orange');
+        });
+});
+```
