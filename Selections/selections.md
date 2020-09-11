@@ -4,9 +4,9 @@ D3 has two functions to make selections
 
 - d3.select
 
-- d3.selectAll.
-
 > d3.select selects the first matching element
+
+- d3.selectAll.
 
 > d3.selectAll selects all matching elements. Each function takes a single argument which specifies the selector string.
 
