@@ -1,5 +1,5 @@
 var myData = [10, 40, 30, 50, 20];
-var circleSpacing = 100;
+var circleSpacing = 150;
 var transitionDuration = 500;
 
 function update() {

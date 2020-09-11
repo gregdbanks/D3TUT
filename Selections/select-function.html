@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <title>Using the i argument</title>
+</head>
+
+<style>
+    circle {
+        fill: #4285F4;
+    }
+</style>
+
+<body>
+    <div>
+        <button onClick="update();">Click to update circle elements</button>
+    </div>
+
+    <svg r="760" height="290">
+        <g transform="translate(80, 60)">
+            <circle r="20" cy="0" />
+            <circle r="20" cy="50" />
+            <circle r="20" cy="100" />
+            <circle r="20" cy="150" />
+        </g>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script>
+        function update() {
+            d3.selectAll('circle')
+                .attr('cx', function (d, i) {
+                    return i * 40;
+                });
+        }
+    </script>
+</body>
+
+</html>
