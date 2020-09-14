@@ -34,8 +34,8 @@
     <script>
         d3.selectAll('circle')
             .on('click', function (d, i) {
-                d3.select('.status')
-                    .text('You clicked on circle ' + i);
+                d3.select(this)
+                    .style('fill', '#FF3366');
             });
     </script>
 </body>
